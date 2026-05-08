@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Objectifs d'apprentissage
+## Objectifs d'apprentissage
 
 À la fin de ce writeup, tu sauras :
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 🛠️ Prérequis & Outils
+## Prérequis & Outils
 
 | Outil | Usage | Lien |
 |-------|-------|------|
@@ -186,7 +186,7 @@ goto :cond_1
 new-instance v0, Lsg/vantagepoint/uncrackable3/CodeCheck;
 ```
 
-> ⚠️**Important** : Utiliser `goto :cond_1` et non `return-void` — sinon `super.onCreate()` n'est jamais appelé et l'app crashe avec `SuperNotCalledException`.
+> **Important** : Utiliser `goto :cond_1` et non `return-void` — sinon `super.onCreate()` n'est jamais appelé et l'app crashe avec `SuperNotCalledException`.
 
 ### Recompiler, signer et installer
 
@@ -305,7 +305,7 @@ Recompiler, signer et réinstaller (mêmes commandes qu'à l'étape 3).
 
 ---
 
-## 🧩 Étape 5 — Analyser la logique de vérification dans libfoo.so
+## Étape 5 — Analyser la logique de vérification dans libfoo.so
 
 ### La fonction check_code
 
@@ -348,7 +348,8 @@ Donc : **mot de passe = pizza XOR local_48**
 
 Cette fonction contient ~90 `malloc()` et une liste chaînée — c'est de l'obfuscation Tigress/O-LLVM pour masquer la logique utile.
 
-<!-- IMAGE: screenshot Ghidra montrant la fonction obfusquée avec les malloc -->
+<img width="1568" height="729" alt="4" src="https://github.com/user-attachments/assets/efc20ddf-47fb-452f-99b3-0092b55498a3" />
+
 
 **La donnée utile est à la toute fin de la fonction :**
 
@@ -446,7 +447,7 @@ lab17/
 
 ---
 
-## 🔗 Ressources
+##  Ressources
 
 - [OWASP Mobile Security Testing Guide](https://mobile-security.gitbook.io/mobile-security-testing-guide/)
 - [OWASP UnCrackable Apps](https://github.com/OWASP/owasp-mastg/tree/master/Crackmes)
